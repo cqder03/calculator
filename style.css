@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  background-color: #202020;
+  width: 20em;
+  border-radius: 5px;
+}
+
+#display {
+  height: 8em;
+  width: 20em;
+  background-color: #202020;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#display-content {
+  color: white;
+  font-size: 36px;
+  padding-right: 5px;
+}
+
+#button-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2px;
+  padding: 0 0 0 3px;
+}
+
+#button {
+  height: 51px;
+  width: 77px;
+  border-radius: 5px;
+  font-size: 26px;
+  line-height: 51px;
+  background-position: center center;
+  color: white;
+  text-align: center;
+}
+
+.marked:active {
+  background-color: lightskyblue;
+}
+
+.outer:active {
+  background-color: #3c3c3c;
+}
+
+.inner:active {
+  background-color: #464646;
+}
+
+#button > img {
+  padding-top: 0.35em;
+}
+
+.inner {
+  background: #3b3b3b;
+}
+
+.outer {
+  background: #323232;
+}
+
+.marked {
+  background: #4cc2ff;
+}
