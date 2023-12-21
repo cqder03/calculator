@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'roboto_monoregular';
+  src: url('assets/fonts/Roboto-Mono/robotomono-variablefont_wght-webfont.woff2') format('woff2'),
+       url('assets/fonts/Roboto-Mono/robotomono-variablefont_wght-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
+  font-family: 'roboto_monoregular';
 }
 
 body {
@@ -9,7 +19,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,33 +34,40 @@ main {
 #display {
   height: 8em;
   width: 20em;
-  background-color: #202020;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   display: flex;
-  justify-content: flex-end;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
+#display-content-upperscreen {
+  font-size: 1em;
+  padding: 8px 10px 0 0;
+}
+
 #display-content {
-  color: white;
-  font-size: 36px;
-  padding-right: 5px;
+  font-size: 2.25em;
+  padding: 0 10px 3px;
+  overflow: auto;
 }
 
 #button-wrapper {
   display: flex;
   flex-flow: row wrap;
   gap: 2px;
-  padding: 0 0 0 3px;
+  padding: 0 0 3px 3px;
 }
 
-#button {
+.button {
   height: 51px;
   width: 77px;
+  border: none;
   border-radius: 5px;
   font-size: 26px;
   line-height: 51px;
   background-position: center center;
-  color: white;
   text-align: center;
 }
 
@@ -66,7 +83,7 @@ main {
   background-color: #464646;
 }
 
-#button > img {
+.button > img {
   padding-top: 0.35em;
 }
 
@@ -80,4 +97,23 @@ main {
 
 .marked {
   background: #4cc2ff;
+}
+
+footer {
+  height: 10vh;
+  background: #040D12;
+  line-height: 10vh;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.copyright-info-link {
+  position: relative;
+  top: 13px;
+  padding-left: 0.5em;
+}
+
+#copyright-info:nth-of-type(1) {
+  border-right: 2px solid white;
+  padding-right: 0.4em;
 }

@@ -5,41 +5,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Calculator</title>
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/x-icon" href="assets/calculator-favicon.ico">
-		<script href="script.js" defer></script>
+		<link rel="icon" type="image/x-icon" href="assets/icons/calculator-favicon.ico">
+		<script src="script.js" defer></script>
 </head>
 <body>
 		<main>
 				<section id="calculator">
 						<div id="display">
-							<p id="display-content">0</p>
+							<p id="display-content-upperscreen"></p>
+							<p maxlength="10" id="display-content">0</p>
 						</div>
 						<div id="button-wrapper">
-								<div id="button" class="outer">CE</div>
-								<div id="button" class="outer">C</div>
-								<div id="button" class="outer"><img src="assets/backspace-32.png" alt=""></div>
-								<div id="button" class="outer"><img src="assets/divide-32.png" alt=""></div>
-								<div id="button" class="inner">7</div>
-								<div id="button" class="inner">8</div>
-								<div id="button" class="inner">9</div>
-								<div id="button" class="outer"><img src="assets/multiply-32.png" alt=""></div>
-								<div id="button" class="inner">4</div>
-								<div id="button" class="inner">5</div>
-								<div id="button" class="inner">6</div>
-								<div id="button" class="outer"><img src="assets/subtract-32.png" alt=""></div>
-								<div id="button" class="inner">1</div>
-								<div id="button" class="inner">2</div>
-								<div id="button" class="inner">3</div>
-								<div id="button" class="outer"><img src="assets/plus-math-32.png" alt=""></div>
-								<div id="button" class="inner"><img src="assets/plus-slash-minus-32.png" alt=""></div>
-								<div id="button" class="inner">0</div>
-								<div id="button" class="inner">.</div>
-								<div id="button" class="marked"><img src="assets/equal-sign-32.png" alt=""></div>
+								<button id="CE" class="button outer">CE</button>
+								<button id="C" class="button outer">C</button>
+								<button id="DEL" class="button outer"><img src="assets/icons/backspace-32.png" alt=""></button>
+								<button id="DIV" class="button outer"><img src="assets/icons/divide-32.png" alt=""></button>
+								<button id="7" class="button inner">7</button>
+								<button id="8" class="button inner">8</button>
+								<button id="9" class="button inner">9</button>
+								<button id="MUL" class="button outer"><img src="assets/icons/multiply-32.png" alt=""></button>
+								<button id="4" class="button inner">4</button>
+								<button id="5" class="button inner">5</button>
+								<button id="6" class="button inner">6</button>
+								<button id="SUB" class="button outer"><img src="assets/icons/subtract-32.png" alt=""></button>
+								<button id="1" class="button inner">1</button>
+								<button id="2" class="button inner">2</button>
+								<button id="3" class="button inner">3</button>
+								<button id="PLU" class="button outer"><img src="assets/icons/plus-math-32.png" alt=""></button>
+								<button id="PNM" class="button inner"><img src="assets/icons/plus-slash-minus-32.png" alt=""></button>
+								<button id="0" class="button inner">0</button>
+								<button id="DOT" class="button inner">.</button>
+								<button id="EQU" class="button marked"><img src="assets/icons/equal-sign-32.png" alt=""></button>
 						</div>
 				</section>
 		</main>
 		<footer>
-
+			<span id="copyright-info">Made by cqder03<a class="copyright-info-link" href="https://github.com/cqder03" target="_blank"><img src="assets/icons/github-mark-white-45x45.png" alt="github logo"></a></span>
+			<span>Icons by<a class="copyright-info-link" href="https://icons8.com" target="_blank"><img src="assets/icons/icons8-45.png" alt="icons8 logo"></a></span>
 		</footer>
 </body>
 </html>
